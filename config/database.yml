@@ -86,3 +86,6 @@ production:
   database: yappy_production
   # username: yappy
   # password: <%= ENV['YAPPY_DATABASE_PASSWORD'] %>
+
+
+
