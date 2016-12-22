@@ -36,9 +36,27 @@
 <hr class="clear" />
 <br class="clear" />
 
+<div class="container">
+  <%= yield %>
+</div>
+
+<div class="footer">
+  <div class="container">
+   <div class ="col-xs-6">
+    <%= link_to "Gimme another quote!", "#", class: 'next-quote' %>
+   </div>
+   <div class="col-xs-6 footer-blurb">
+    Developed by Jonathan Ong
+    </div>
 
 
-<%= yield %>
+
+
+
+  </div>
+
+</div>
+
 
 </body>
 </html>
