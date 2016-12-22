@@ -10,6 +10,7 @@
 
   <header>
     <div class="col-xs-3">
+      <%= link_to root_path, class: 'logo-link' do %>
      <div class="circle">
       <br />
       You know
@@ -18,13 +19,14 @@
       <br />
       to cook
     </div>
+    <% end %>
 
   </div>  
   <div class="col-xs-4 slogan">
     Splurting out unsolicited advice about cooking since 2016
   </div>  
   <div class="col-xs-5 links">
-    <%= link_to 'Contribute', '#' %>
+    <%= link_to 'Contribute', new_quote_path %>
     <%= link_to 'About', '#' %>
 
 
@@ -43,7 +45,7 @@
 <div class="footer">
   <div class="container">
    <div class ="col-xs-6">
-    <%= link_to "Gimme another quote!", "#", class: 'next-quote' %>
+    <%= link_to "Gimme another quote!", root_path, class: 'next-quote' %>
    </div>
    <div class="col-xs-6 footer-blurb">
     Developed by Jonathan Ong
