@@ -1,8 +1,21 @@
+<br class="clear" />
+<br />
 
-<h2>
-<span>Yappy / No. <%= @quote.id %></span>
-Here's the <u>best unsolicited food advice</u> you can get!
+<h2 class="headerTwo">
+<u>Quote <%= @quote.id %></u>
+<br />
+From the game <%= @quote.source.capitalize %>
 </h2>
 
+<br class="clear" />
+<br />
+<br />
+<br />
+
+
+<div class="blockquote">
+
 <h1><%= @quote.saying %></h1>
-<h2 class="pull-right">- <%= @quote.author %></h2> 
+<h2 pull-right">- <%= @quote.author %></h2> 
+
+</div>

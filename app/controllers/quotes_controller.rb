@@ -19,7 +19,7 @@ end
   private
 
   def quote_params
-    params.require(:quote).permit(:saying, :author)
+    params.require(:quote).permit(:saying, :author, :source)
   end
 
 

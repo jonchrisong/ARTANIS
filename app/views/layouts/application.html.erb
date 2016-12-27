@@ -10,30 +10,42 @@
 
   <header>
     <div class="col-xs-3">
-      <%= link_to root_path, class: 'logo-link' do %>
-      <div class="circle">
-        <br />
-        You know
-        <br />
-        you need
-        <br />
-        to cook
+      <%= link_to root_path, class: 'home-link' do %>
+      <div class="cube" style="">
+        <div class="front" style="">
+        </div>
+        <div class="back" style="">
+        </div>
+        <div class="right" style="">
+        </div>
+        <div class="left" style="">
+        </div>
+        <div class="top" style="">
+        </div>
+        <div class="bottom" style="">
+        </div>
       </div>
       <% end %>
 
     </div>  
-    <div class="col-sm-4 hidden-xs slogan">
-      Splurting out unsolicited advice about cooking since 2016
+    <div class="col-sm-6 hidden-xs slogan">
+      <%= link_to root_path, class: 'home-link' do %>
+      <span class="slogan">ARTANIS</span> - Providing you with your favorite game quotes since 2016
     </div>  
-    <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
+    <% end %>
+    <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-3 links">
       <!-- Link trigger modal -->
       <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
       &nbsp;&nbsp;
       <%= link_to 'About', about_path %>
+      &nbsp;&nbsp;
+      &nbsp;&nbsp;
+      &nbsp;&nbsp;
+      &nbsp;&nbsp;
     </div>
   </header>
 
- 
+
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -44,9 +56,11 @@
         </div>
         <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
-          <%= f.input :saying, label: "What is the saying you want to add?", placeholder: "Fear is the disease. Hustle is the antidote." %>
+          <%= f.input :saying, label: "Game quote that you would like to add?", placeholder: "If I have wings, why am I always walking?" %>
           <br />
-          <%= f.input :author, label: "Who is the author of the quote?", placeholder: 'Travid Kalanick' %>
+          <%= f.input :author, label: "Character that said this quote?", placeholder: 'Dreadlord' %>
+          <br />
+          <%= f.input :source, label: "Name of game?", placeholder: 'Warcraft 3' %>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -58,8 +72,8 @@
   </div>
 
 
-
-  <hr class="clear" />
+  <br class="clear" />
+  <hr class="clear hr" />
   <br class="clear" />
 
   <div class="container">
@@ -71,17 +85,14 @@
 
     <%= yield %>
   </div>
-
   <div class="footer">
-    <div class="container">
-     <div class ="col-xs-12 col-sm-6">
-      <%= link_to "Gimme another quote!", root_path, class: 'next-quote' %>
+       <div class ="col-xs-12 col-sm-12">
+      <%= link_to "Show me a random quote", root_path, class: 'button' %>
     </div>
-    <div class="col-xs-12 col-sm-6 footer-blurb">
+    <div class="col-xs-12 col-sm-12">
       Developed by Jonathan Ong
     </div>
   </div>
-</div>
 
 
 </body>
