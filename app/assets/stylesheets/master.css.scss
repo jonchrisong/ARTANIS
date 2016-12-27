@@ -1,9 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body
-{
-background: #E0E0E0; 
+
+body{
+  background: #E0E0E0; 
 }
 
 .clear {
@@ -299,14 +299,6 @@ p { color: #111; font-family: 'Open Sans', sans-serif; font-size: 16px; line-hei
   font-weight: bold;
 }
 
-.footer{
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-  font-style: italic;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  height: 150px;
-}
 
 .home-link:hover{
   text-decoration: none;
@@ -325,8 +317,6 @@ p { color: #111; font-family: 'Open Sans', sans-serif; font-size: 16px; line-hei
 ::selection {
   background-color: #a8d1ff;
 }
-
-/* Cloud */
 
 .hr {
     height: 12px;
