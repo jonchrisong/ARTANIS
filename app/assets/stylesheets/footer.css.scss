@@ -5,12 +5,14 @@ html {
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 50px;
 
+    margin: 0 0 150px; /* bottom = footer height */
 }
+
+
 .footer {
-  position: absolute;
+  position: relative;
+  padding-top: 200px;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -21,3 +23,4 @@ body {
   font-weight: bold;
   height: 150px;
 }
+
